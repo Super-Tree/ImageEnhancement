@@ -76,7 +76,7 @@ int main( )
 	Mat dst;
 	cvtColor(src, dst, CV_RGB2HSV);
 	vector<Mat> mv;
-	split(src,mv);
+	split(dst,mv);
 	imshow("RGB", dst);
 	imshow("H", mv[0]);
 	imshow("S", mv[1]);
