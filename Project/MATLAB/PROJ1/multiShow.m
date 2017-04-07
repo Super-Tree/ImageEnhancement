@@ -7,7 +7,7 @@ for ii=1:len
 name=allnames{1,ii};
 A=imread(name); %读取文件
 %然后在此处添加你的图像处理程序即可
-medfilt2(A,[10 10]);
+
 A = im2double(A);
 r = A(:, :, 1);
 g = A(:, :, 2);
@@ -31,6 +31,7 @@ den(den == 0) = eps;
 S = 1 - 3.* num./den;
 H(S == 0) = 0;
 I = (r + g + b)/3;
+medfilt2(I,[10 10]);
 % Combine all three results into an hsi image.
 hsi = cat(3, H, S, I);
  figure(2)
