@@ -1,8 +1,9 @@
+clc;
 srcDir=uigetdir('Choose source directory.'); %获得选择的文件夹
 cd(srcDir);
 allnames=struct2cell(dir('*.jpg')); %只处理jpg文件
 [k,len]=size(allnames); %获得jpg文件的个数
-for ii=1:len
+for ii=1:len     
 %逐次取出文件
 name=allnames{1,ii};
 A=imread(name); %读取文件
@@ -31,10 +32,13 @@ den(den == 0) = eps;
 S = 1 - 3.* num./den;
 H(S == 0) = 0;
 I = (r + g + b)/3;
-medfilt2(I,[10 10]);
+% w1=fspecial('average',[15 15]);  
+% g1=imfilter(I,w1,'replicate');  
+% imshow(g1);
+medfilt2(I,[40 40]);
 % Combine all three results into an hsi image.
 hsi = cat(3, H, S, I);
- figure(2)
+figure(2)
 % subplot(2,2,1);imshow(hsi),title('origin');
 % subplot(2,2,2);imshow(H),title('H');
 % subplot(2,2,3);imshow(S),title('S');
