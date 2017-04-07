@@ -1,0 +1,13 @@
+int main( )
+{
+	Mat src = imread("./data/pic001.png");
+	imshow("origin", src);
+
+	Mat dst;
+    GaussianBlur(src, dst, Size(3, 3), 0, 0);
+	imshow("Gaussian", dst);
+	imwrite("./data/Gaussian.jpg", dst);
+	//cvtColor();
+	waitKey();
+	return 0;
+}
