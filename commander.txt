@@ -1,0 +1,20 @@
+cd D:\git_repository
+
+git push -u mycode master
+
+git commit -m "MD1"
+
+git add -A
+
+git add README.md
+
+git init
+
+touch README.md
+
+git fetch origin 
+git reset --hard mycode/master
+
+1
+
+
