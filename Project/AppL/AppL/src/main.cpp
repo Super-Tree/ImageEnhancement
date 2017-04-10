@@ -4,89 +4,80 @@
 
 using namespace std;
 using namespace cv;
+const int LENGTH = 256;
+int brightness_value(const Mat & image, int div, int * MBL, int* MBLl, int* MBLh);
+int MBL = 0;
+int MBLh = 0;
+int MBLl = 0;
 
-#include "cv.h"
-#include "cxcore.h"
-#include "highgui.h"
-#include "cvaux.h"
-
-int main2()
-{
-	IplImage* src = NULL;
-	IplImage* floatsrc = NULL;
-	IplImage* floathsv = NULL;
-	IplImage* floatimgH = NULL;
-	IplImage* floatimgS = NULL;
-	IplImage* floatimgV = NULL;
-
-	cvNamedWindow("src", 1);
-	cvNamedWindow("H通道", 1);
-	cvNamedWindow("S通道", 1);
-	cvNamedWindow("V通道", 1);
-
-	src = cvLoadImage("lena.jpg", -1);
-	cvShowImage("src", src);
-	CvSize size = cvGetSize(src);
-
-	//先将图像转换成float型的
-	floatsrc = cvCreateImage(size, IPL_DEPTH_32F, 3);
-	floathsv = cvCreateImage(size, IPL_DEPTH_32F, 3);
-	floatimgH = cvCreateImage(size, IPL_DEPTH_32F, 1);
-	floatimgS = cvCreateImage(size, IPL_DEPTH_32F, 1);
-	floatimgV = cvCreateImage(size, IPL_DEPTH_32F, 1);
-
-	//将src从8位转换到32位的float型
-	cvConvertScale(src, floatsrc, 1.0 / 255.0, 0);//归一化之后方能够显示
-	//cvConvertScale( src, floatsrc, 1, 0 );
-	//cvShowImage("floatsrc",floatsrc);
-	//cvWaitKey(-1);
-
-	//将float型图像 从BGR转换到HSV  如果需要转换到其他的颜色空间 那么改变CV_BGR2HSV即可
-	//cvCvtColor要求两个参数的类型必须完全相同，所以要转为float型
-	cvCvtColor(floatsrc, floathsv, CV_BGR2HSV);
-
-	//将三通道图像 分解成3个单通道图像，H对应的通道时0，S、V对应的通道时1和2
-	//cvCvtPixToPlane(picHSV, h_plane, s_plane, v_plane, 0);
-	cvSplit(floathsv, floatimgH, floatimgS, floatimgV, NULL);
-
-	cvShowImage("src", src);
-	cvShowImage("H通道", floatimgH);
-	cvShowImage("S通道", floatimgS);
-	cvShowImage("V通道", floatimgV);
-	//CV_BGR2HSV
-
-	cvWaitKey(0);
-
-	cvReleaseImage(&src);
-	cvReleaseImage(&floathsv);
-	cvReleaseImage(&floatimgH);
-	cvReleaseImage(&floatimgS);
-	cvReleaseImage(&floatimgV);
-
-	return 0;
-}
 int main( )
 {
-	Mat src = imread("./data/pic001.png");
-	//imshow("origin", src);
-	
-	//GaussianBlur(src, src, Size(3, 3), 0, 0);
-	//src.convertTo(src, CV_32F, 1 / 255.0);
+	Mat origin = imread("./data/pic1.jpg");
+	imshow("Origin",origin);
+	Mat gray_img;
+	cvtColor(origin, gray_img, CV_RGB2GRAY);
+ 
+	brightness_value(gray_img, 1, &MBL,&MBLl,&MBLh);
 
-	Mat dst;
-	cvtColor(src, dst, CV_RGB2HSV);
-	vector<Mat> mv;
-	split(dst,mv);
-	imshow("RGB", dst);
-	imshow("H", mv[0]);
-	imshow("S", mv[1]);
-	imshow("V", mv[2]);
-	 
-	//Mat dst;
-	//GaussianBlur(src, dst, Size(3, 3), 0, 0);
-	//imshow("Gaussian", dst);
-	//imwrite("./data/Gaussian.jpg", dst);
-	//cvtColor(src, dst, CV_BGR2HSV);
 	waitKey();
 	return 0;
 }
+/*********************************** 
+*const Mat & image  灰度图
+*
+/***********************************/
+vector<int> gray_distribution(LENGTH,0);
+int brightness_value(const Mat & image,int div,int * mbl,int*mbll, int* mblh  )
+{
+	int nr = image.rows;
+	int nc = image.cols;
+	if (image.isContinuous())
+	{
+		nr = 1;
+		nc = nc*image.rows*image.channels();
+	}
+
+	for (int i = 0; i < nr; i++)
+	{
+			const  uchar* inData = image.ptr<uchar>(i);
+			for (int j = 0; j < nc; j++)
+			{
+						if (*inData >=LENGTH)
+						{
+							cout << "Out of range" << endl;
+							return -1;
+						}
+						gray_distribution[*inData++]++;							 
+		      }
+ 
+	}
+ 
+	for (size_t i = 0; i<LENGTH; i++)
+	{
+		*mbl += gray_distribution[i] * i;
+	}
+	*mbl /= image.rows*image.cols;
+
+ 
+	int temp = 0;
+	for (size_t i = *mbl; i < LENGTH; i++)
+	{
+		*mblh += gray_distribution[i] * i;
+		temp += gray_distribution[i];
+	}
+	*mblh /= temp;
+	
+ 
+	int temp1 = 0;
+	for (size_t i = 0; i < *mbl; i++)
+	{
+		*mbll+= gray_distribution[i] * i;
+		temp1 += gray_distribution[i];
+	}
+		*mbll /= temp1;
+
+	return 0;
+
+}
+
+

@@ -1,6 +1,6 @@
 clc;
 cd('D:\git_repository\Project\MATLAB\PROJ1\data');
-allnames=struct2cell(dir('*.png')); %只处理jpg文件
+allnames=struct2cell(dir('*.jpg')); %只处理jpg文件
 [k,len]=size(allnames); %获得jpg文件的个数
 for ii=1:len     
 %逐次取出文件
@@ -44,7 +44,8 @@ figure(2)
 % subplot(2,2,2);imshow(H),title('H');
 % subplot(2,2,3);imshow(S),title('S');
 % subplot(2,2,4);imshow(I),title('I');
-[X,Y] = meshgrid(1242:-1:1,1:1:375);
+%[X,Y] = meshgrid(1242:-1:1,1:1:375);
+[X,Y] = meshgrid(640:-1:1,1:1:480);
 mesh(X,Y,I);
 C=rgb2gray(D);
 figure(3)
