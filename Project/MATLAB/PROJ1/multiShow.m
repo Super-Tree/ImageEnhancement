@@ -5,10 +5,9 @@ allnames=struct2cell(dir('*.png')); %只处理jpg文件
 for ii=1:len     
 %逐次取出文件
 name=allnames{1,ii};
-A=imread(name); %读取文件
+D=imread(name); %读取文件
 %然后在此处添加你的图像处理程序即可
-
-A = im2double(A);
+A = im2double(D);
 r = A(:, :, 1);
 g = A(:, :, 2);
 b = A(:, :, 3);
@@ -18,6 +17,8 @@ figure(1)
 % subplot(2,2,3);imshow(g),title('G');
 % subplot(2,2,4);imshow(b),title('B');
  imshow(A),title('origin');
+
+
  % Implement the conversion equations.
 num = 0.5*((r - g) + (r - b));
 den = sqrt((r - g).^2 + (r - b).*(g - b));
@@ -43,7 +44,10 @@ figure(2)
 % subplot(2,2,2);imshow(H),title('H');
 % subplot(2,2,3);imshow(S),title('S');
 % subplot(2,2,4);imshow(I),title('I');
-[X,Y] = meshgrid(1:1:1242,1:1:375);
+[X,Y] = meshgrid(1242:-1:1,1:1:375);
 mesh(X,Y,I);
+C=rgb2gray(D);
+figure(3)
+imhist(C);
 pause();
 end
