@@ -2,7 +2,7 @@
 #include "highgui.h"
 #include <iostream>
 #include<io.h>
-
+#include <conio.h> 
 using namespace std;
 using namespace cv;
  
@@ -18,7 +18,8 @@ int main()
 {
 	vector<string> files;
 	getJustCurrentFile("./data/", files);
-	for (int i = 0; i < files.size(); i++)
+	int  times=files.size();
+	for (int i = 0; i < times; )
 	{
 		    //string fileName ="./data/pic" + format("%d", i) + ".png";   // "./data/pic01.png";   // 
 			//Mat origin = imread(fileName);
@@ -52,12 +53,18 @@ int main()
 			float perc = brightness_value(hist, 1, &MBL, &MBLl, &MBLh);
 			DMP = MBL - (MBLl + MBLh) / 2;
 			string result ="Delta:"+format("%.2f", perc) + "%";
-			string num = "DMP: " + format("%d", DMP) + " MBL: " + format("%d", MBL);
-			putText(dst, result, Point(20,20), FONT_HERSHEY_SIMPLEX,0.5, Scalar(255, 0, 0),1, 4);
-			putText(dst, num, Point(120,20), FONT_HERSHEY_SIMPLEX,0.5, Scalar(255, 0, 0), 1, 4);
-			imshow("result",dst);
-			/***********************************************/
-			waitKey();
+			string num = "DMP: " + format("%d", DMP) + " MBL: " + format("%d",  MBL);
+			putText(dst, result, Point(20, 20), FONT_HERSHEY_SIMPLEX, 0.5, Scalar(127, 255, 170), 1, 4);
+			putText(dst, num, Point(120, 20), FONT_HERSHEY_SIMPLEX, 0.5, Scalar(127, 255, 170), 1, 4);
+ 			imshow("result",dst);
+			int keyBoard = waitKey();
+			switch (keyBoard)
+			{
+			case 2424832: if(i>1) i--; break;
+			case 2555904: if (i< (times-1)) i++; break;
+			default: i++; break;
+			}
+			
 	}
 	return 0;
 }
