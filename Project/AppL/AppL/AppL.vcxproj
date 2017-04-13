@@ -82,7 +82,28 @@
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="data\Text.txt" />
+    <Image Include="data\histMask.jpg" />
+    <Image Include="data\pic1.jpg" />
+    <Image Include="data\pic10.jpg" />
+    <Image Include="data\pic11.jpg" />
+    <Image Include="data\pic12.jpg" />
+    <Image Include="data\pic13.jpg" />
+    <Image Include="data\pic14.jpg" />
+    <Image Include="data\pic15.jpg" />
+    <Image Include="data\pic16.jpg" />
+    <Image Include="data\pic17.jpg" />
+    <Image Include="data\pic18.jpg" />
+    <Image Include="data\pic2.jpg" />
+    <Image Include="data\pic3.jpg" />
+    <Image Include="data\pic4.jpg" />
+    <Image Include="data\pic5.jpg" />
+    <Image Include="data\pic6.jpg" />
+    <Image Include="data\pic7.jpg" />
+    <Image Include="data\pic8.jpg" />
+    <Image Include="data\pic9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Text.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

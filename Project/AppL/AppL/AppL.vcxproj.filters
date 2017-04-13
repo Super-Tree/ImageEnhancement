@@ -12,6 +12,9 @@
     <Filter Include="Reminder">
       <UniqueIdentifier>{f9a5e26e-c202-4e3d-b9ec-057cf0ad37ab}</UniqueIdentifier>
     </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{b11070f1-c7c7-4082-836e-8b673fd73f71}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -19,7 +22,66 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="data\Text.txt">
+    <Image Include="data\histMask.jpg">
+      <Filter>data</Filter>
+    </Image>
+    <Image Include="data\pic1.jpg">
+      <Filter>data</Filter>
+    </Image>
+    <Image Include="data\pic2.jpg">
+      <Filter>data</Filter>
+    </Image>
+    <Image Include="data\pic3.jpg">
+      <Filter>data</Filter>
+    </Image>
+    <Image Include="data\pic4.jpg">
+      <Filter>data</Filter>
+    </Image>
+    <Image Include="data\pic5.jpg">
+      <Filter>data</Filter>
+    </Image>
+    <Image Include="data\pic6.jpg">
+      <Filter>data</Filter>
+    </Image>
+    <Image Include="data\pic7.jpg">
+      <Filter>data</Filter>
+    </Image>
+    <Image Include="data\pic8.jpg">
+      <Filter>data</Filter>
+    </Image>
+    <Image Include="data\pic9.jpg">
+      <Filter>data</Filter>
+    </Image>
+    <Image Include="data\pic10.jpg">
+      <Filter>data</Filter>
+    </Image>
+    <Image Include="data\pic11.jpg">
+      <Filter>data</Filter>
+    </Image>
+    <Image Include="data\pic12.jpg">
+      <Filter>data</Filter>
+    </Image>
+    <Image Include="data\pic13.jpg">
+      <Filter>data</Filter>
+    </Image>
+    <Image Include="data\pic14.jpg">
+      <Filter>data</Filter>
+    </Image>
+    <Image Include="data\pic15.jpg">
+      <Filter>data</Filter>
+    </Image>
+    <Image Include="data\pic16.jpg">
+      <Filter>data</Filter>
+    </Image>
+    <Image Include="data\pic17.jpg">
+      <Filter>data</Filter>
+    </Image>
+    <Image Include="data\pic18.jpg">
+      <Filter>data</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Text.txt">
       <Filter>Reminder</Filter>
     </Text>
   </ItemGroup>
