@@ -1,0 +1,31 @@
+		//Mat	dst = Mat::zeros(origin.size(), origin.type());
+		//for (int i = 0; i<origin.rows; ++i)
+		//	for (int j = 0; j<origin.cols; ++j)
+		//		for (int k = 0; k<3; ++k)
+		//			dst.at<Vec3b>(i, j)[k] = saturate_cast<uchar>(origin.at<Vec3b>(i, j)[k] * alpha + beta-100);
+		//imshow("enhance", dst);
+
+		//createTrackbar("contrast", "enhance", &alph, 255, 0);
+		//createTrackbar("brightness", "enhance", &beta, 255, 0);
+		//alpha = ((float)alph+255) / 255;
+
+		split(origin, rgbChannel);
+		for (int i = 0; i < 3;i++)
+		  equalizeHist(rgbChannel[i], rgbChannel[i]);
+		Mat equal(origin.size(), origin.type());
+		merge(rgbChannel,  equal);
+		imshow("equal",equal);
+
+		void GammaLUTMaker(float fParameter)
+{
+	int nIdx;
+
+	for (nIdx = 0; nIdx<256; nIdx++)
+	{
+		gammaTable[nIdx] = (uchar)(pow((float)nIdx / 255, fParameter)*255.0f);
+	}
+}
+
+		      uchar* in0 = inputArry[0].ptr<uchar>(i);
+			  uchar* in1 = inputArry[1].ptr<uchar>(i);
+			  uchar* in2 = inputArry[2].ptr<uchar>(i);

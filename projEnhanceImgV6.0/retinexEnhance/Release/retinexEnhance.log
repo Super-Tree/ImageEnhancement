@@ -1,0 +1,119 @@
+﻿生成启动时间为 2017/5/23 16:07:13。
+     1>项目“C:\Users\claude\Desktop\程序备份\projEnhanceImgV4.0\retinexEnhance\retinexEnhance.vcxproj”在节点 3 上(Build 个目标)。
+     1>ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\imgHDR\src\36.cpp "..\imgHDR\src\源.cpp" "..\imgHDR\src\源12.cpp" src\MSR_original.cpp src\parser.cpp
+         36.cpp
+     1>..\imgHDR\src\36.cpp(12): error C2146: 语法错误: 缺少“;”(在标识符“Retinex”的前面)
+     1>..\imgHDR\src\36.cpp(12): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>..\imgHDR\src\36.cpp(12): error C2065: “TMatrix”: 未声明的标识符
+     1>..\imgHDR\src\36.cpp(12): error C2065: “Src”: 未声明的标识符
+     1>..\imgHDR\src\36.cpp(12): error C2065: “Dest”: 未声明的标识符
+     1>..\imgHDR\src\36.cpp(12): error C2062: 意外的类型“float”
+     1>..\imgHDR\src\36.cpp(13): error C2143: 语法错误 : 缺少“;”(在“{”的前面)
+     1>..\imgHDR\src\36.cpp(13): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+         源.cpp
+     1>..\imgHDR\src\源.cpp(15): error C2143: 语法错误 : 缺少“;”(在“__stdcall”的前面)
+     1>..\imgHDR\src\源.cpp(15): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>..\imgHDR\src\源.cpp(15): error C2065: “TMatrix”: 未声明的标识符
+     1>..\imgHDR\src\源.cpp(15): error C2065: “Src”: 未声明的标识符
+     1>..\imgHDR\src\源.cpp(15): error C2065: “Dest”: 未声明的标识符
+     1>..\imgHDR\src\源.cpp(15): error C2062: 意外的类型“float”
+     1>..\imgHDR\src\源.cpp(16): error C2143: 语法错误 : 缺少“;”(在“{”的前面)
+     1>..\imgHDR\src\源.cpp(16): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+         源12.cpp
+     1>..\imgHDR\src\源12.cpp(1): fatal error C1083: 无法打开包括文件: “..\..\Utility.h”: No such file or directory
+         MSR_original.cpp
+     1>src\MSR_original.cpp(56): fatal error C1083: 无法打开包括文件: “io_png.h”: No such file or directory
+         parser.cpp
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(60): error C2146: 语法错误: 缺少“;”(在标识符“m_cCurToken”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(60): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(61): error C2146: 语法错误: 缺少“;”(在标识符“m_cCurWord”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(61): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(62): error C2146: 语法错误: 缺少“;”(在标识符“m_cCurBuffer”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(62): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(64): error C2143: 语法错误 : 缺少“;”(在“*”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(64): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(65): error C2146: 语法错误: 缺少“;”(在标识符“m_dwError”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(65): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(68): error C2146: 语法错误: 缺少“;”(在标识符“Read”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(68): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(68): warning C4183: “Read”:  缺少返回类型；假定为返回“int”的成员函数
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(69): error C2146: 语法错误: 缺少“;”(在标识符“SetError”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(69): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(69): error C2061: 语法错误: 标识符“DWORD”
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(69): warning C4183: “SetError”:  缺少返回类型；假定为返回“int”的成员函数
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(83): error C2143: 语法错误 : 缺少“;”(在“*”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(83): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(83): error C2061: 语法错误: 标识符“CHAR”
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(83): warning C4183: “GetFirstWord”:  缺少返回类型；假定为返回“int”的成员函数
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(84): error C2143: 语法错误 : 缺少“;”(在“*”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(84): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(84): error C2061: 语法错误: 标识符“CHAR”
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(84): warning C4183: “GetValue”:  缺少返回类型；假定为返回“int”的成员函数
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(86): error C2146: 语法错误: 缺少“;”(在标识符“Start”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(86): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(86): error C2143: 语法错误 : 缺少“,”(在“*”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(86): warning C4183: “Start”:  缺少返回类型；假定为返回“int”的成员函数
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(88): error C2143: 语法错误 : 缺少“;”(在“*”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(88): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(88): warning C4183: “GetToken”:  缺少返回类型；假定为返回“int”的成员函数
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(89): error C2146: 语法错误: 缺少“;”(在标识符“GetError”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(89): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(89): warning C4183: “GetError”:  缺少返回类型；假定为返回“int”的成员函数
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(69): error C2065: “m_dwError”: 未声明的标识符
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(69): error C2065: “dw”: 未声明的标识符
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(74): error C2065: “m_cCurBuffer”: 未声明的标识符
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(75): error C2065: “m_pCurrentIndex”: 未声明的标识符
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(76): error C2065: “m_dwError”: 未声明的标识符
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(89): error C2065: “m_dwError”: 未声明的标识符
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(94): error C2143: 语法错误 : 缺少“;”(在“*”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(94): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(109): error C2146: 语法错误: 缺少“;”(在标识符“AddTail”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(109): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(109): error C2061: 语法错误: 标识符“CHAR”
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(109): warning C4183: “AddTail”:  缺少返回类型；假定为返回“int”的成员函数
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(110): error C2146: 语法错误: 缺少“;”(在标识符“GetTail”的前面)
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(110): error C4430: 缺少类型说明符 - 假定为 int。注意:  C++ 不支持默认 int
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(110): error C2061: 语法错误: 标识符“PZPSTR”
+     1>C:\Program Files (x86)\Windows Kits\8.1\Include\um\parser.h(110): warning C4183: “GetTail”:  缺少返回类型；假定为返回“int”的成员函数
+     1>src\parser.cpp(29): error C2039: “vector”: 不是“std”的成员
+     1>src\parser.cpp(29): error C2061: 语法错误: 标识符“vector”
+     1>src\parser.cpp(34): error C2065: “par”: 未声明的标识符
+     1>src\parser.cpp(34): error C2228: “.size”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>src\parser.cpp(50): error C2065: “par”: 未声明的标识符
+     1>src\parser.cpp(50): error C2227: “->name”的左边必须指向类/结构/联合/泛型类型
+     1>src\parser.cpp(64): error C2065: “opt”: 未声明的标识符
+     1>src\parser.cpp(64): error C2227: “->comment”的左边必须指向类/结构/联合/泛型类型
+     1>src\parser.cpp(65): error C2065: “opt”: 未声明的标识符
+     1>src\parser.cpp(65): error C2227: “->defvalue”的左边必须指向类/结构/联合/泛型类型
+     1>src\parser.cpp(70): error C2065: “opt”: 未声明的标识符
+     1>src\parser.cpp(70): error C2227: “->comment”的左边必须指向类/结构/联合/泛型类型
+     1>src\parser.cpp(78): error C2065: “par”: 未声明的标识符
+     1>src\parser.cpp(78): error C2227: “->name”的左边必须指向类/结构/联合/泛型类型
+     1>src\parser.cpp(79): error C2065: “par”: 未声明的标识符
+     1>src\parser.cpp(79): error C2227: “->comment”的左边必须指向类/结构/联合/泛型类型
+     1>src\parser.cpp(92): error C2039: “vector”: 不是“std”的成员
+     1>src\parser.cpp(92): error C2061: 语法错误: 标识符“vector”
+     1>src\parser.cpp(97): error C2065: “opt”: 未声明的标识符
+     1>src\parser.cpp(97): error C2228: “.size”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>src\parser.cpp(98): error C2065: “par”: 未声明的标识符
+     1>src\parser.cpp(98): error C2228: “.size”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>src\parser.cpp(109): error C2065: “opt”: 未声明的标识符
+     1>src\parser.cpp(109): error C2227: “->flag”的左边必须指向类/结构/联合/泛型类型
+     1>src\parser.cpp(109): error C2227: “->value”的左边必须指向类/结构/联合/泛型类型
+     1>src\parser.cpp(109): error C2227: “->gp”的左边必须指向类/结构/联合/泛型类型
+     1>src\parser.cpp(109): error C2660: “strcat”: 函数不接受 1 个参数
+     1>src\parser.cpp(112): error C2065: “par”: 未声明的标识符
+     1>src\parser.cpp(112): error C2227: “->value”的左边必须指向类/结构/联合/泛型类型
+     1>src\parser.cpp(177): error C2065: “opt”: 未声明的标识符
+     1>src\parser.cpp(177): error C2227: “->flag”的左边必须指向类/结构/联合/泛型类型
+     1>src\parser.cpp(177): error C2227: “->defvalue”的左边必须指向类/结构/联合/泛型类型
+     1>src\parser.cpp(177): error C2227: “->value”的左边必须指向类/结构/联合/泛型类型
+     1>已完成生成项目“C:\Users\claude\Desktop\程序备份\projEnhanceImgV4.0\retinexEnhance\retinexEnhance.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.80

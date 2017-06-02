@@ -1,0 +1,27 @@
+﻿生成启动时间为 2017/6/2 17:04:23。
+     1>项目“C:\Users\claude\Desktop\projEnhanceImgV6.0\imgHDR\imgHDR.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /Qpar /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /openmp /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt src\retinxHDRmain.cpp
+         retinxHDRmain.cpp
+     1>src\retinxHDRmain.cpp(157): warning C4018: “<”: 有符号/无符号不匹配
+     1>src\retinxHDRmain.cpp(186): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>src\retinxHDRmain.cpp(277): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>src\retinxHDRmain.cpp(302): warning C4018: “<”: 有符号/无符号不匹配
+     1>src\retinxHDRmain.cpp(309): warning C4018: “<”: 有符号/无符号不匹配
+     1>src\retinxHDRmain.cpp(311): warning C4018: “<”: 有符号/无符号不匹配
+     1>src\retinxHDRmain.cpp(326): warning C4101: “temp1”: 未引用的局部变量
+     1>src\retinxHDRmain.cpp(378): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>src\retinxHDRmain.cpp(459): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>src\retinxHDRmain.cpp(461): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>src\retinxHDRmain.cpp(647): warning C4018: “<”: 有符号/无符号不匹配
+     1>src\retinxHDRmain.cpp(650): warning C4018: “<”: 有符号/无符号不匹配
+     1>src\retinxHDRmain.cpp(667): warning C4018: “<”: 有符号/无符号不匹配
+     1>src\retinxHDRmain.cpp(670): warning C4018: “<”: 有符号/无符号不匹配
+       Lib:
+         D:\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\Users\claude\Desktop\projEnhanceImgV6.0\Release\imgHDR.lib" /NOLOGO /LTCG Release\retinxHDRmain.obj
+         imgHDR.vcxproj -> C:\Users\claude\Desktop\projEnhanceImgV6.0\Release\imgHDR.lib
+     1>已完成生成项目“C:\Users\claude\Desktop\projEnhanceImgV6.0\imgHDR\imgHDR.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:03.98

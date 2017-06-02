@@ -1,0 +1,17 @@
+﻿生成启动时间为 2017/6/2 17:04:36。
+     1>项目“C:\Users\claude\Desktop\projEnhanceImgV6.0\dehazing\dehazing.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Release\) contains files shared from another project (projEnhanceImg.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>Link:
+         D:\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\claude\Desktop\projEnhanceImgV6.0\Release\imgDehazing.exe" /INCREMENTAL:NO /NOLOGO imgHDR.lib PicEstimation.lib opencv_calib3d2413.lib opencv_contrib2413.lib opencv_core2413.lib opencv_features2d2413.lib opencv_flann2413.lib opencv_gpu2413.lib opencv_highgui2413.lib opencv_imgproc2413.lib opencv_legacy2413.lib opencv_ml2413.lib opencv_nonfree2413.lib opencv_objdetect2413.lib opencv_ocl2413.lib opencv_photo2413.lib opencv_stitching2413.lib opencv_superres2413.lib opencv_ts2413.lib opencv_video2413.lib opencv_videostab2413.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\claude\Desktop\projEnhanceImgV6.0\Release\imgDehazing.pdb" /SUBSYSTEM:CONSOLE /LARGEADDRESSAWARE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\claude\Desktop\projEnhanceImgV6.0\Release\imgDehazing.lib" /MACHINE:X86 /SAFESEH Release\Dehazing.obj
+         Release\functions.obj
+         Release\guidedfilter.obj
+         Release\dahzingMain.obj
+         Release\Transmission.obj
+         正在生成代码
+         已完成代码的生成
+         dehazing.vcxproj -> C:\Users\claude\Desktop\projEnhanceImgV6.0\Release\imgDehazing.exe
+     1>已完成生成项目“C:\Users\claude\Desktop\projEnhanceImgV6.0\dehazing\dehazing.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:03.54

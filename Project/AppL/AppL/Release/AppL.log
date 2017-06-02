@@ -1,0 +1,47 @@
+﻿生成启动时间为 2017/4/21 19:05:14。
+     1>项目“D:\git_repository\Project\AppL\AppL\AppL.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt src\dehazing.cpp src\brightnessEvalue.cpp src\main.cpp
+         dehazing.cpp
+     1>src\dehazing.cpp(66): warning C4244: “=”: 从“double”转换到“uchar”，可能丢失数据
+     1>src\dehazing.cpp(99): warning C4244: “=”: 从“double”转换到“uchar”，可能丢失数据
+     1>src\dehazing.cpp(131): warning C4244: “=”: 从“double”转换到“uchar”，可能丢失数据
+     1>src\dehazing.cpp(159): warning C4244: “=”: 从“double”转换到“uchar”，可能丢失数据
+         brightnessEvalue.cpp
+     1>src\brightnessEvalue.cpp(143): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>src\brightnessEvalue.cpp(158): warning C4018: “<”: 有符号/无符号不匹配
+     1>src\brightnessEvalue.cpp(160): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>src\brightnessEvalue.cpp(161): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>src\brightnessEvalue.cpp(162): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>src\brightnessEvalue.cpp(166): warning C4018: “<”: 有符号/无符号不匹配
+     1>src\brightnessEvalue.cpp(168): warning C4244: “+=”: 从“float”转换到“int”，可能丢失数据
+     1>src\brightnessEvalue.cpp(169): warning C4244: “+=”: 从“float”转换到“int”，可能丢失数据
+     1>src\brightnessEvalue.cpp(180): warning C4018: “<”: 有符号/无符号不匹配
+     1>src\brightnessEvalue.cpp(182): warning C4244: “+=”: 从“float”转换到“int”，可能丢失数据
+     1>src\brightnessEvalue.cpp(183): warning C4244: “+=”: 从“float”转换到“int”，可能丢失数据
+     1>src\brightnessEvalue.cpp(195): warning C4018: “<”: 有符号/无符号不匹配
+     1>src\brightnessEvalue.cpp(197): warning C4244: “+=”: 从“float”转换到“int”，可能丢失数据
+     1>src\brightnessEvalue.cpp(198): warning C4244: “+=”: 从“float”转换到“int”，可能丢失数据
+     1>src\brightnessEvalue.cpp(250): warning C4244: “/=”: 从“float”转换到“int”，可能丢失数据
+     1>src\brightnessEvalue.cpp(289): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>src\brightnessEvalue.cpp(290): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>src\brightnessEvalue.cpp(294): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>src\brightnessEvalue.cpp(295): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>src\brightnessEvalue.cpp(297): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>src\brightnessEvalue.cpp(303): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>src\brightnessEvalue.cpp(309): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>src\brightnessEvalue.cpp(329): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>src\brightnessEvalue.cpp(330): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>src\brightnessEvalue.cpp(334): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>src\brightnessEvalue.cpp(335): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>src\brightnessEvalue.cpp(337): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>src\brightnessEvalue.cpp(343): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>src\brightnessEvalue.cpp(349): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+         main.cpp
+     1>d:\opencv\build\include\opencv2\flann\logger.h(66): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 参见“fopen”的声明
+     1>已完成生成项目“D:\git_repository\Project\AppL\AppL\AppL.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:02.70

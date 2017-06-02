@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\Dehazing.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functions.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\guidedfilter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Transmission.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dahzingMain.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{722f38db-35ef-4657-8624-1c7c7c485982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{61f5f75c-d0e4-4794-91d9-de2cf4d89144}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{588529f1-b98f-4fbd-a470-d36e807afcfa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="data\0a.mp4">
+      <Filter>data</Filter>
+    </Media>
+    <Media Include="data\0b.mp4">
+      <Filter>data</Filter>
+    </Media>
+    <Media Include="data\e.mp4">
+      <Filter>data</Filter>
+    </Media>
+    <Media Include="data\g.mp4">
+      <Filter>data</Filter>
+    </Media>
+    <Media Include="data\h.mp4">
+      <Filter>data</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\a.avi">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\b.avi">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\c.avi">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\ff2.avi">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\riverside.avi">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\road1.avi">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\vid3.avi">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\vide2.avi">
+      <Filter>data</Filter>
+    </None>
+    <None Include="data\zhazeroad.avi">
+      <Filter>data</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\reminder.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes\dehazing.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

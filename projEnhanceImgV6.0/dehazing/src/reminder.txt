@@ -1,0 +1,133 @@
+//HSV//HSV//HSV//HSV//HSV//HSV//HSV//HSV//HSV//HSV//HSV//HSV//HSV//HSV//HSV//HSV//HSV//HSV//HSV//HSV//HSV//HSV//HSV
+			//		origin.copyTo(origin_copy);
+			//		//Mat origin = imread(files[j].c_str(), IMREAD_COLOR);
+			//		imshow("origin", origin);	
+			//		time_t Node_1 = clock();
+			//		cout << "Node1 Load   " << (float)(Node_1 - start_t) / CLOCKS_PER_SEC << "secs" << endl;
+			//		//********************HSV²Ù×÷*********************************//
+			//		Mat hsvImg(origin.size(), CV_8UC1, Scalar(00));
+			//		cvtColor(origin, hsvImg, CV_BGR2HSV);
+			//		vector<Mat> hsv{ Mat(origin.size(), CV_8U, Scalar(0)), Mat(origin.size(), CV_8U, Scalar(0)), Mat(origin.size(), CV_8U, Scalar(0)) };
+			//		split(hsvImg, hsv);
+			//		time_t QNode_2 = clock();
+			//		cout << "QNode2 SPLIT   " << (float)(QNode_2 - Node_1) / CLOCKS_PER_SEC << "secs" << endl;
+			//		Mat V_hsvMSR(origin.size(), CV_32FC1, Scalar(0.0));
+			//		singleChn_MSR(hsv[2], V_hsvMSR, scales, nscales, Sigma, NULL);
+			//	
+			//		time_t QNode_3 = clock();
+			//		cout << "QNode2 HSVMSR   " << (float)(QNode_3 - QNode_2) / CLOCKS_PER_SEC << "secs" << endl;
+			//		Mat V_hsvMSRSCB(origin.size(), CV_32F, Scalar(0.0));
+			//		singleChn_SCB(V_hsvMSR, V_hsvMSRSCB, cutPercL, cutPercR);
+			//		time_t QNode_4 = clock();
+			//		cout << "QNode2 HSVSCB   " << (float)(QNode_4 - QNode_3) / CLOCKS_PER_SEC << "secs" << endl;
+			//		imshow("scbV", V_hsvMSRSCB);
+			//		V_hsvMSRSCB.convertTo(hsv[2], CV_8UC1);
+			//		imshow("scbVUCHAR", hsv[2]);
+			//		//imshow("BB", hsv[2]);
+			//		Mat hsvResult(origin.size(), CV_8UC3, Scalar(0.0));
+			//		merge(hsv, hsvResult);
+			//		cvtColor(hsvResult, hsvResult, CV_HSV2BGR);
+			//		imshow("HSV_RESULT", hsvResult);
+			//		time_t QNode_5 = clock();
+			//		cout << "Finsh hsv effect  "<< "  " << (float)(QNode_5 - start_t) / CLOCKS_PER_SEC << "secs   %%%%%%%%%%%%%%%%%%%%%%%%%%" << endl;
+			//	
+			//		int keyBoard = waitKey(1);
+			//		if (keyBoard == 2555904)//right
+			//		{
+			//			waitKey(40);
+			//			break;
+			//		}
+			//		else if (keyBoard == 2424832)//left
+			//		{
+			//			if (j > 0)
+			//			{
+			//				j -= 2;
+			//				waitKey(40);
+			//				break;
+
+			//			}
+			//		}
+			//		else if (keyBoard == 32)
+			//		{
+			//			waitKey();
+			//		}
+			//	}
+			//}
+
+			///////////////////È¥Îí/////////////////////////////
+			//{
+		//	CvCapture* cvSequence = cvCaptureFromFile(files[j].c_str());
+		//	int nWid = (int)cvGetCaptureProperty(cvSequence, CV_CAP_PROP_FRAME_WIDTH); //atoi(argv[3]);
+		//	int nHei = (int)cvGetCaptureProperty(cvSequence, CV_CAP_PROP_FRAME_HEIGHT); //atoi(argv[4]);
+		//	int frameCnt = (int)cvGetCaptureProperty(cvSequence, CV_CAP_PROP_FRAME_COUNT); //atoi(argv[4]);
+
+		//IplImage *imInput;
+		//IplImage *imOutput = cvCreateImage(cvSize(nWid, nHei), IPL_DEPTH_8U, 3);
+		//int nFrame;
+		//dehazing dehazingImg(nWid, nHei, 16, false, false, 5.0f, 113.0f, 60);
+
+		//IplImage* input_gray = cvCreateImage(cvGetSize(imOutput), 8, 1);
+		//IplImage* output_gray = cvCreateImage(cvGetSize(imOutput), 8, 1);
+		//IplImage *cannyInputImg = cvCreateImage(cvGetSize(imOutput), 8, 1);
+		//IplImage *cannyOuputImg = cvCreateImage(cvGetSize(imOutput), 8, 1);
+		//IplImage* darkImage = cvCreateImage(cvGetSize(imOutput), 8, 1);
+		//time_t start_t = clock();
+
+		//for (nFrame = 0; nFrame < frameCnt; nFrame++)
+		//{
+		//	imInput = cvQueryFrame(cvSequence);
+		//	Origin = cvCloneImage(imInput);//for show the information
+
+		//	dehazingImg.AirlightSerachRange(cvPoint(120, 0), cvPoint(520, 240));
+		//	dehazingImg.HazeRemoval(imInput, imOutput, nFrame);
+
+		//	//Mat darkImage(480,640, CV_8U);
+		//	//Mat InputImage(imInput, 1);
+		//	//darkChannel(InputImage, darkImage, 15);
+		//	//imshow("darkImage", darkImage);
+
+		//	cvShowImage("origin", imInput);
+		//	cvShowImage("dehazing", imOutput);
+
+		//	cvCvtColor(imInput, input_gray, CV_BGR2GRAY);
+		//	cvCvtColor(imOutput, output_gray, CV_BGR2GRAY);
+		//	cvCanny(input_gray, cannyInputImg, 200, 150);
+		//	cvCanny(output_gray, cannyOuputImg, 200, 150);
+		//	cvShowImage("CannyInput", cannyInputImg);
+		//	cvShowImage("CannyOutput", cannyOuputImg);
+		//	Controller(&j);
+		//	int keyBoard = waitKey(1);
+		//	if (keyBoard == 2555904)
+				//{
+				//	if (j < (filesCnt - 1))
+				//	{
+				//		waitKey(40);
+				//		break;
+				//	}
+				//}
+				//else if (keyBoard == 2424832)
+				//{
+				//	if (j > 0)
+				//	{
+				//		j -= 2;
+				//		waitKey(40);
+				//		break;
+				//	}
+				//}
+				//else if (keyBoard == 32)
+				//{
+				//	waitKey();
+				//}
+				//	}
+				//	cout << nFrame << " frames " << (float)(clock() - start_t) / CLOCKS_PER_SEC << "secs" << endl;
+				//	cvReleaseCapture(&cvSequence);
+				//	cvReleaseImage(&imOutput);
+
+				//	cvReleaseImage(&input_gray);
+				//	cvReleaseImage(&output_gray);
+				//	cvReleaseImage(&cannyInputImg);
+				//	cvReleaseImage(&cannyOuputImg);
+				//	cvReleaseImage(&darkImage);
+				//	//cvDestroyAllWindows();
+				//}	
+				//return 0;

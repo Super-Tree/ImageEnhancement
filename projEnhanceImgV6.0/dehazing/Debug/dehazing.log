@@ -1,0 +1,45 @@
+﻿生成启动时间为 2017/5/25 10:07:48。
+     1>项目“C:\Users\claude\Desktop\projEnhanceImgV5.0\dehazing\dehazing.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (projEnhanceImg.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt src\Dehazing.cpp src\functions.cpp src\guidedfilter.cpp src\dahzingMain.cpp src\Transmission.cpp
+         Transmission.cpp
+     1>c:\users\claude\desktop\projenhanceimgv5.0\dehazing\src\transmission.cpp(208): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>c:\users\claude\desktop\projenhanceimgv5.0\dehazing\src\transmission.cpp(244): warning C4101: “nSquaredOut”: 未引用的局部变量
+     1>c:\users\claude\desktop\projenhanceimgv5.0\dehazing\src\transmission.cpp(463): warning C4101: “nSquaredOut”: 未引用的局部变量
+         dahzingMain.cpp
+     1>c:\users\claude\desktop\projenhanceimgv5.0\dehazing\src\dahzingmain.cpp(47): warning C4305: “初始化”: 从“double”到“float”截断
+     1>c:\users\claude\desktop\projenhanceimgv5.0\dehazing\src\dahzingmain.cpp(62): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+         guidedfilter.cpp
+     1>c:\users\claude\desktop\projenhanceimgv5.0\dehazing\src\guidedfilter.cpp(1102): warning C4305: “=”: 从“__int64”到“float”截断
+     1>c:\users\claude\desktop\projenhanceimgv5.0\dehazing\src\guidedfilter.cpp(1023): warning C4101: “fMeanI”: 未引用的局部变量
+     1>c:\users\claude\desktop\projenhanceimgv5.0\dehazing\src\guidedfilter.cpp(1060): warning C4101: “fMBS”: 未引用的局部变量
+     1>c:\users\claude\desktop\projenhanceimgv5.0\dehazing\src\guidedfilter.cpp(1060): warning C4101: “fMG”: 未引用的局部变量
+     1>c:\users\claude\desktop\projenhanceimgv5.0\dehazing\src\guidedfilter.cpp(1057): warning C4101: “grey”: 未引用的局部变量
+     1>c:\users\claude\desktop\projenhanceimgv5.0\dehazing\src\guidedfilter.cpp(1036): warning C4101: “fVariance”: 未引用的局部变量
+     1>c:\users\claude\desktop\projenhanceimgv5.0\dehazing\src\guidedfilter.cpp(1060): warning C4101: “fMR”: 未引用的局部变量
+     1>c:\users\claude\desktop\projenhanceimgv5.0\dehazing\src\guidedfilter.cpp(1060): warning C4101: “fMB”: 未引用的局部变量
+     1>c:\users\claude\desktop\projenhanceimgv5.0\dehazing\src\guidedfilter.cpp(1060): warning C4101: “fMRS”: 未引用的局部变量
+     1>c:\users\claude\desktop\projenhanceimgv5.0\dehazing\src\guidedfilter.cpp(1060): warning C4101: “fMGS”: 未引用的局部变量
+         functions.cpp
+         Dehazing.cpp
+     1>c:\users\claude\desktop\projenhanceimgv5.0\dehazing\src\dehazing.cpp(722): warning C4305: “参数”: 从“double”到“float”截断
+         正在生成代码...
+       Link:
+         D:\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\claude\Desktop\projEnhanceImgV5.0\Debug\imgDehazing.exe" /INCREMENTAL /NOLOGO imgHDR.lib opencv_contrib2413d.lib opencv_core2413d.lib opencv_features2d2413d.lib opencv_flann2413d.lib opencv_gpu2413d.lib opencv_highgui2413d.lib opencv_imgproc2413d.lib opencv_legacy2413d.lib opencv_ml2413d.lib opencv_nonfree2413d.lib opencv_objdetect2413d.lib opencv_ocl2413d.lib opencv_photo2413d.lib opencv_stitching2413d.lib opencv_superres2413d.lib opencv_ts2413d.lib opencv_video2413d.lib opencv_videostab2413d.lib opencv_calib3d2413.lib opencv_contrib2413.lib opencv_core2413.lib opencv_features2d2413.lib opencv_flann2413.lib opencv_gpu2413.lib opencv_highgui2413.lib opencv_imgproc2413.lib opencv_legacy2413.lib opencv_ml2413.lib opencv_nonfree2413.lib opencv_objdetect2413.lib opencv_ocl2413.lib opencv_photo2413.lib opencv_stitching2413.lib opencv_superres2413.lib opencv_ts2413.lib opencv_video2413.lib opencv_videostab2413.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\claude\Desktop\projEnhanceImgV5.0\Debug\imgDehazing.pdb" /SUBSYSTEM:CONSOLE /LARGEADDRESSAWARE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\claude\Desktop\projEnhanceImgV5.0\Debug\imgDehazing.lib" /MACHINE:X86 Debug\Dehazing.obj
+         Debug\functions.obj
+         Debug\guidedfilter.obj
+         Debug\dahzingMain.obj
+         Debug\Transmission.obj
+         imgHDR.lib(retinxHDRmain.obj) : 找到 MSIL .netmodule 或使用 /GL 编译的模块；正在使用 /LTCG 重新启动链接；将 /LTCG 添加到链接命令行以改进链接器性能
+     1>LINK : warning LNK4075: 忽略“/INCREMENTAL”(由于“/LTCG”规范)
+     1>Dehazing.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/OPT:LBR”规范)
+     1>imgHDR.lib(retinxHDRmain.obj) : error LNK2038: 检测到“_ITERATOR_DEBUG_LEVEL”的不匹配项:  值“0”不匹配值“2”(Dehazing.obj 中)
+     1>imgHDR.lib(retinxHDRmain.obj) : error LNK2038: 检测到“RuntimeLibrary”的不匹配项:  值“MD_DynamicRelease”不匹配值“MDd_DynamicDebug”(Dehazing.obj 中)
+     1>LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+     1>C:\Users\claude\Desktop\projEnhanceImgV5.0\Debug\imgDehazing.exe : fatal error LNK1319: 检测到 2 个不匹配项
+     1>已完成生成项目“C:\Users\claude\Desktop\projEnhanceImgV5.0\dehazing\dehazing.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:05.96

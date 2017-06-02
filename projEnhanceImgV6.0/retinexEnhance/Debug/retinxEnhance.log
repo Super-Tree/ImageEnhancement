@@ -1,0 +1,25 @@
+﻿生成启动时间为 2017/5/10 20:52:58。
+     1>项目“C:\Users\claude\Desktop\projEnhanceImg\retinxEnhance\retinxEnhance.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt src\parser.cpp
+         parser.cpp
+     1>c:\users\claude\desktop\projenhanceimg\retinxenhance\src\parser.cpp(123): warning C4101: “c”: 未引用的局部变量
+       Link:
+         D:\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\claude\Desktop\projEnhanceImg\Debug\retinxEnhance.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\claude\Desktop\projEnhanceImg\Debug\retinxEnhance.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\claude\Desktop\projEnhanceImg\Debug\retinxEnhance.lib" /MACHINE:X86 Debug\auxiliary_lib.obj
+         Debug\io_png.obj
+         Debug\MSR_original.obj
+         Debug\MSR_original_lib.obj
+         Debug\parser.obj
+     1>MSR_original.obj : error LNK2019: 无法解析的外部符号 _io_png_read_u8，该符号在函数 _main 中被引用
+     1>MSR_original.obj : error LNK2019: 无法解析的外部符号 _io_png_write_u8，该符号在函数 _main 中被引用
+     1>MSR_original_lib.obj : error LNK2019: 无法解析的外部符号 __imp__fftw_execute，该符号在函数 _convolution 中被引用
+     1>MSR_original_lib.obj : error LNK2019: 无法解析的外部符号 __imp__fftw_plan_r2r_2d，该符号在函数 _convolution 中被引用
+     1>MSR_original_lib.obj : error LNK2019: 无法解析的外部符号 __imp__fftw_destroy_plan，该符号在函数 _convolution 中被引用
+     1>MSR_original_lib.obj : error LNK2019: 无法解析的外部符号 __imp__fftw_malloc，该符号在函数 _convolution 中被引用
+     1>MSR_original_lib.obj : error LNK2019: 无法解析的外部符号 __imp__fftw_free，该符号在函数 _convolution 中被引用
+     1>C:\Users\claude\Desktop\projEnhanceImg\Debug\retinxEnhance.exe : fatal error LNK1120: 7 个无法解析的外部命令
+     1>已完成生成项目“C:\Users\claude\Desktop\projEnhanceImg\retinxEnhance\retinxEnhance.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.31

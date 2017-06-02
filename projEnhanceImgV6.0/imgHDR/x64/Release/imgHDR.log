@@ -1,0 +1,13 @@
+﻿生成启动时间为 2017/5/18 9:13:04。
+     1>项目“C:\Users\claude\Desktop\projEnhanceImg\imgHDR\imgHDR.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W1 /WX- /O2 /D _CRT_SECURE_NO_WARNINGS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt src\retinxHDRmain.cpp
+         retinxHDRmain.cpp
+       Link:
+         D:\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\claude\Desktop\projEnhanceImg\x64\Release\imgHDR.exe" /NOLOGO opencv_calib3d2413.lib opencv_contrib2413.lib opencv_core2413.lib opencv_features2d2413.lib opencv_flann2413.lib opencv_gpu2413.lib opencv_highgui2413.lib opencv_imgproc2413.lib opencv_legacy2413.lib opencv_ml2413.lib opencv_nonfree2413.lib opencv_objdetect2413.lib opencv_ocl2413.lib opencv_photo2413.lib opencv_stitching2413.lib opencv_superres2413.lib opencv_ts2413.lib opencv_video2413.lib opencv_videostab2413.lib "libfftw3-3.lib" "libfftw3f-3.lib" "libfftw3l-3.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"C:\Users\claude\Desktop\projEnhanceImg\x64\Release\imgHDR.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\claude\Desktop\projEnhanceImg\x64\Release\imgHDR.lib" /MACHINE:X64 x64\Release\retinxHDRmain.obj
+     1>opencv_highgui2413.lib(opencv_highgui2413.dll) : fatal error LNK1112: 模块计算机类型“X86”与目标计算机类型“x64”冲突
+     1>已完成生成项目“C:\Users\claude\Desktop\projEnhanceImg\imgHDR\imgHDR.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.70

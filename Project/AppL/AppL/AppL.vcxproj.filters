@@ -17,6 +17,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\dehazing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\brightnessEvalue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="src\main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -81,8 +87,13 @@
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Text.txt">
+    <Text Include="src\Text.txt">
       <Filter>Reminder</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\dehazing.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
